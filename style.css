@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Roboto+Slab:wght@200&family=Varela+Round&display=swap');
+/* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Varela Round', sans-serif; */
+
+body{
+    background-color: wheat;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    background-color: rgb(66, 63, 63);
+    height: 40px;
+    list-style: none;
+    /* color: white */
+
+    padding:2px 3px;
+    
+
+}
+nav ul li{
+    color: white;
+}
+ .navbar{
+    padding: 11px 11px;
+    margin: 3px 3px;
+}
+
+.logo img{
+    width: 42px;
+}
+
+.logo{
+    font-size: 0.9rem;
+    color: white;
+    display: flex;
+    font-weight: bolder;
+    align-items: center;
+}
+
+
+.container{
+    min-height: 72vh;
+    background-color: pink;
+    color: white;
+    font-family: 'Josefin Sans';
+    margin: 10px auto;
+    /* display: flex; */
+    width: 85%;
+    background-image: url('bg.jpg');
+    background-position: center;
+    
+   
+
+}
+.songItem{
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border-radius: 55px;
+
+}
+
+.songName:hover{
+    font-size: 1.1rem;
+}
+
+.songitemcontainer{
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.songItem img{
+    width: 30px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.bottom
+{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    height: 120px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+
+}
+
+#progressbar{
+    width: 80%;
+    
+    
+}
+.icons{
+    margin-top: 7px;
+}
+.icons i{
+    cursor: pointer;
+    
+}
+.icons i:hover{
+   transform: scale(1.1);
+}
+
+
+.movement{
+    position: absolute;
+    left: 30vh;
+}
+
+.movement img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
+
+
+
+
