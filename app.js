@@ -51,10 +51,30 @@ audio.addEventListener('timeupdate',()=>{
    progress=parseInt((audio.currentTime/audio.duration)*100);
 
    progressbar.value=progress;
-   curr++;
-   timestamp.innerHTML=curr;
+//    curr++;
+//    timestamp.innerHTML=curr;
   
 })
+
+let vall=document.getElementById("speed"); 
+let num=1;
+
+document.getElementById("increase").addEventListener("click",()=>{
+    if(audio.playbackRate==1)
+    audio.playbackRate=1.25;
+    else if(audio.playbackRate==1.25)
+    audio.playbackRate=1.50;
+
+    vall.innerHTML=audio.playbackRate+" x";
+})
+document.getElementById("decrease").addEventListener("click",()=>{
+    if(audio.playbackRate==1.5)
+    audio.playbackRate=1.25;
+   else if(audio.playbackRate==1.25)
+    audio.playbackRate=1;
+    vall.innerHTML=audio.playbackRate+" x";
+})
+
 
 progressbar.addEventListener('change',()=>{
     audio.currentTime=progressbar.value*audio.duration/100;
@@ -92,6 +112,7 @@ songItem.forEach((song)=>{
 
     })
 })
+
 
 document.getElementById("previous").addEventListener("click",()=>{
     if(idx<=0)
