@@ -5,7 +5,7 @@ font-family: 'Roboto Slab', serif;
 font-family: 'Varela Round', sans-serif; */
 
 body{
-    background-color: wheat;
+    background-color: whitesmoke;
 }
 *{
     margin: 0px;
@@ -49,18 +49,28 @@ nav ul li{
 
 
 .container{
-    min-height: 72vh;
+    min-height: 73.5vh;
     background-color: pink;
     color: white;
     font-family: 'Josefin Sans';
     margin: 10px auto;
     /* display: flex; */
     width: 85%;
-    background-image: url('bg.jpg');
+    background-image: url('https://cdn3.mycity4kids.com/images/article-images/web/headersV2/img-20210326-605e2567b0344.png');
     background-position: center;
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    margin-top: 1px;
+    
     
    
 
+}
+.container h1{
+    margin-left: 5px;
+    margin: 5px 5px;
+    padding-top: 5px;
 }
 .songItem{
     background-color: white;
@@ -88,6 +98,9 @@ nav ul li{
     width: 30px;
     margin: 0 23px;
     border-radius: 34px;
+    display: block;
+    float: inline-start;
+   
 }
 
 .timestamp{
@@ -151,6 +164,19 @@ nav ul li{
     opacity: 0;
     transition: opacity 1s ease-in;
 }
+
+.playbackspeed{
+    color: white;
+    position: absolute;
+    right: 55px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid wheat; */
+    flex-direction: column;
+    width: 50px;
+}
+
+
 
 
 
